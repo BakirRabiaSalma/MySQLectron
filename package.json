@@ -1,0 +1,13 @@
+{
+  "name"    : "MySQLectron",
+  "version" : "0.1.0",
+  "main"    : "main.js",
+  "author"  : "Yves Lelievre",
+  "scripts" : {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kahite/MySQLectron",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
