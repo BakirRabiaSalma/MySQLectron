@@ -8,7 +8,7 @@ let win
 
 // This function will create the window of the page, expecting the connection settings in entry
 function createWindow (conSettings) {
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width: 1600, height: 1200})
 
   // We create the connection submenu
   let connectionSubMenu = [{
@@ -43,7 +43,7 @@ function createWindow (conSettings) {
 
   // Load the main page
   win.loadURL(`file://${__dirname}/index.html`)
-
+  win.webContents.openDevTools()
   win.on('closed', () => {
     win = null
   })

@@ -2,9 +2,48 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
     <title>MySQLectron</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./main.css" rel="stylesheet">
   </head>
   <body>
-    <h1>MySQLectron</h1>
+    <div class="container mainContainer">
+      <h1>MySQLectron</h1>
+      <button type="button" class="btn btn-primary">Add a new connection</button>
+      <p class="lead">Or select one of the following</p>
+      <div class="mainContainer-connectionList">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">localhost</h4>
+              </div>
+              <div class="panel-body">
+                <p>Localhost params</p>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Connection 1</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Connection params</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.jQuery = window.$ = require('jquery');
+    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

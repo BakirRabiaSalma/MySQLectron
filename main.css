@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(79, 79, 98);
+  color: white;
+}
+
+.mainContainer {
+  text-align: center;
+}
+
+.mainContainer-connectionList {
+  color: black;
+}

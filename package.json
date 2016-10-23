@@ -1,13 +1,15 @@
 {
-  "name"    : "MySQLectron",
-  "version" : "0.1.0",
-  "main"    : "main.js",
-  "author"  : "Yves Lelievre",
-  "scripts" : {
+  "name": "MySQLectron",
+  "version": "0.1.0",
+  "main": "main.js",
+  "author": "Yves Lelievre",
+  "scripts": {
     "start": "electron ."
   },
   "repository": "https://github.com/kahite/MySQLectron",
-  "devDependencies": {
-    "electron": "^1.4.1"
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron": "^1.4.1",
+    "jquery": "^3.1.1"
   }
 }
