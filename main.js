@@ -1,4 +1,5 @@
 const electron = require('electron') // Electron
+const nunjucks = require('nunjucks') // Nunjucks
 const connectionSettings = require('./app/Controllers/ConnectionSettingsController')
 const BrowserWindow = electron.BrowserWindow
 const app = electron.app
@@ -42,14 +43,18 @@ function createWindow (conSettings) {
   Menu.setApplicationMenu(menu)
 
   // Load the main page
-  win.loadURL(`file://${__dirname}/index.html`)
+  win.loadURL('data:text/html,' + encodeURIComponent(nunjucks.render('test.njk', {username: "bob"})))
+
   win.webContents.openDevTools()
+
   win.on('closed', () => {
     win = null
   })
 }
 
-app.on('ready', function (){connectionSettings.list(createWindow)})
+app.on('ready', function (){
+  connectionSettings.list(createWindow)
+})
 
 app.on('window-all-closed', () => {
   // On macOS it is common for applications and their menu bar
