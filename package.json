@@ -1,8 +1,10 @@
 {
   "name": "MySQLectron",
+  "description": "A MySQL client interface built with Electron",
   "version": "0.1.0",
   "main": "main.js",
   "author": "Yves Lelievre",
+  "license": "MIT",
   "scripts": {
     "start": "electron ."
   },
